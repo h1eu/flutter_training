@@ -1,0 +1,4 @@
+#Mon Jun 05 23:50:55 ICT 2023
+base.0=C\:\\Users\\KCCSHOP\\Desktop\\quizzler-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

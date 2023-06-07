@@ -1,0 +1,12 @@
+co.appbrewery.magic8ball.app-core-1.6.0-0 C:\Users\KCCSHOP\.gradle\caches\transforms-3\222c0bea2734a8e76ed581a348e824b7\transformed\core-1.6.0\res
+co.appbrewery.magic8ball.app-jetified-window-java-1.0.0-beta04-1 C:\Users\KCCSHOP\.gradle\caches\transforms-3\8e2ea9c9b1ba1acedb7962f104ba7a18\transformed\jetified-window-java-1.0.0-beta04\res
+co.appbrewery.magic8ball.app-jetified-window-1.0.0-beta04-2 C:\Users\KCCSHOP\.gradle\caches\transforms-3\b3c8b27f32f4bf3edaee2ae1dfe080eb\transformed\jetified-window-1.0.0-beta04\res
+co.appbrewery.magic8ball.app-jetified-annotation-experimental-1.1.0-3 C:\Users\KCCSHOP\.gradle\caches\transforms-3\d71d0bde87aa34d42cf65a27686df935\transformed\jetified-annotation-experimental-1.1.0\res
+co.appbrewery.magic8ball.app-debug-4 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\android\app\src\debug\res
+co.appbrewery.magic8ball.app-main-5 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\android\app\src\main\res
+co.appbrewery.magic8ball.app-pngs-6 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\generated\res\pngs\debug
+co.appbrewery.magic8ball.app-resValues-7 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\generated\res\resValues\debug
+co.appbrewery.magic8ball.app-rs-8 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\generated\res\rs\debug
+co.appbrewery.magic8ball.app-mergeDebugResources-9 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\intermediates\incremental\debug\mergeDebugResources\merged.dir
+co.appbrewery.magic8ball.app-mergeDebugResources-10 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\intermediates\incremental\debug\mergeDebugResources\stripped.dir
+co.appbrewery.magic8ball.app-merged_res-11 C:\Users\KCCSHOP\Desktop\magic-8-ball-flutter\build\app\intermediates\merged_res\debug
