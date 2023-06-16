@@ -1,4 +1,4 @@
-#Fri Jun 16 00:59:54 ICT 2023
-base.0=C\:\\Users\\KCCSHOP\\Desktop\\demo\\bmi-calculator-flutter\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
+#Fri Jun 16 21:27:57 ICT 2023
+base.0=C\:\\Users\\letru\\Desktop\\flutter_training\\bmi_app\\build\\app\\intermediates\\dex\\debug\\mergeDexDebug\\classes.dex
 path.0=classes.dex
 renamed.0=classes.dex

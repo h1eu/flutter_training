@@ -12,6 +12,7 @@ class InputPage extends StatefulWidget {
 
 class _InputPageState extends State<InputPage> {
   EnumGender? genderSelected;
+  double height = 160;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -64,14 +65,39 @@ class _InputPageState extends State<InputPage> {
               child: ReusableContainer(
                 colour: Color(kActiveCardColor),
                 containerChild: Column(
+                  mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     Text(
                       "HEIGHT",
                       style: kLabelTextStyle,
                     ),
                     Row(
-                      children: [],
-                    )
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.baseline,
+                      textBaseline: TextBaseline.alphabetic,
+                      children: [
+                        Text(
+                          height.toString(),
+                          style: kNumberTextStyle,
+                        ),
+                        Text(
+                          'cm',
+                          style: kLabelTextStyle,
+                        ),
+                      ],
+                    ),
+                    Slider(
+                      value: height,
+                      min: kMinHeightSlider,
+                      max: kMaxHeightSlider,
+                      activeColor: Color(0xFFF9BCDD2),
+                      inactiveColor: Color(0xFFFF8551),
+                      onChanged: (double newValue) {
+                        setState(() {
+                          height = newValue.round().toDouble();
+                        });
+                      },
+                    ),
                   ],
                 ),
               ),
