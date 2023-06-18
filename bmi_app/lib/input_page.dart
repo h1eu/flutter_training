@@ -4,6 +4,7 @@ import 'package:bmi_calculator/reusable_container.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'constants.dart';
+import 'round_icon_button.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -13,6 +14,8 @@ class InputPage extends StatefulWidget {
 class _InputPageState extends State<InputPage> {
   EnumGender? genderSelected;
   double height = 160;
+  int weight = 74;
+  int age = 19;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -86,17 +89,26 @@ class _InputPageState extends State<InputPage> {
                         ),
                       ],
                     ),
-                    Slider(
-                      value: height,
-                      min: kMinHeightSlider,
-                      max: kMaxHeightSlider,
-                      activeColor: Color(0xFFF9BCDD2),
-                      inactiveColor: Color(0xFFFF8551),
-                      onChanged: (double newValue) {
-                        setState(() {
-                          height = newValue.round().toDouble();
-                        });
-                      },
+                    SliderTheme(
+                      data: SliderTheme.of(context).copyWith(
+                        activeTrackColor: Color(0xFFF9BCDD2),
+                        inactiveTrackColor: Color(0xFFFF8551),
+                        thumbColor: Color(0xFFFF8551),
+                        overlayColor: Color(0x29FF8551),
+                        thumbShape: RoundSliderThumbShape(
+                          enabledThumbRadius: 15.0,
+                        ),
+                      ),
+                      child: Slider(
+                        value: height,
+                        min: kMinHeightSlider,
+                        max: kMaxHeightSlider,
+                        onChanged: (double newValue) {
+                          setState(() {
+                            height = newValue.round().toDouble();
+                          });
+                        },
+                      ),
                     ),
                   ],
                 ),
@@ -108,11 +120,85 @@ class _InputPageState extends State<InputPage> {
                   Expanded(
                     child: ReusableContainer(
                       colour: Color(kActiveCardColor),
+                      containerChild: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "WEIGHT",
+                            style: kLabelTextStyle,
+                          ),
+                          Text(
+                            weight.toString(),
+                            style: kNumberTextStyle,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              RoundIconButton(
+                                child: FontAwesomeIcons.minus,
+                                onClick: () {
+                                  setState(() {
+                                    weight--;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              RoundIconButton(
+                                child: FontAwesomeIcons.plus,
+                                onClick: () {
+                                  setState(() {
+                                    weight++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                   Expanded(
                     child: ReusableContainer(
                       colour: Color(kActiveCardColor),
+                      containerChild: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: [
+                          Text(
+                            "AGE",
+                            style: kLabelTextStyle,
+                          ),
+                          Text(
+                            age.toString(),
+                            style: kNumberTextStyle,
+                          ),
+                          Row(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            children: [
+                              RoundIconButton(
+                                child: FontAwesomeIcons.minus,
+                                onClick: () {
+                                  setState(() {
+                                    age--;
+                                  });
+                                },
+                              ),
+                              SizedBox(
+                                width: 10.0,
+                              ),
+                              RoundIconButton(
+                                child: FontAwesomeIcons.plus,
+                                onClick: () {
+                                  setState(() {
+                                    age++;
+                                  });
+                                },
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
                   ),
                 ],

@@ -4,7 +4,7 @@
             "outputFile": "co.appbrewery.bmicalculator.app-mergeDebugResources-9:/values-si/values-si.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\letru\\.gradle\\caches\\transforms-3\\222c0bea2734a8e76ed581a348e824b7\\transformed\\core-1.6.0\\res\\values-si\\values-si.xml",
+                    "source": "C:\\Users\\KCCSHOP\\.gradle\\caches\\transforms-3\\222c0bea2734a8e76ed581a348e824b7\\transformed\\core-1.6.0\\res\\values-si\\values-si.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
